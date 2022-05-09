@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d3993041.css",
+    "main.js": "/static/js/main.85160f41.js",
+    "static/media/capstone.mp4": "/static/media/capstone.08267639c1af70efee06.mp4",
+    "static/media/image2.jpg": "/static/media/image2.0dcbd18feade1047f57e.jpg",
+    "static/media/image1.jpg": "/static/media/image1.0105b3d59c5849d22ba9.jpg",
+    "static/media/ff.png": "/static/media/ff.36b3282ad53fe1b3a5b0.png",
+    "static/media/maps.png": "/static/media/maps.369cc25762531f50b55f.png",
+    "static/media/React_Developer_David_Baladi.pdf": "/static/media/React_Developer_David_Baladi.ca97eae1197a2d5a3532.pdf",
+    "static/media/bitcoin.jpg": "/static/media/bitcoin.fe0e629234de0ca0849d.jpg",
+    "static/media/atom.jpg": "/static/media/atom.550cf84720acabd623d0.jpg",
+    "static/media/1.jpg": "/static/media/1.c21a594a3a31de5efd0f.jpg",
+    "index.html": "/index.html",
+    "main.d3993041.css.map": "/static/css/main.d3993041.css.map",
+    "main.85160f41.js.map": "/static/js/main.85160f41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3993041.css",
+    "static/js/main.85160f41.js"
+  ]
+}
