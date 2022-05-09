@@ -1,0 +1,277 @@
+$barcolor: #3122bf;
+$lightorange: #ffd580;
+$lightorange: #fde7c5;
+// $lightgreen: #96bf98;
+$lightgreen: #afdea6;
+$lightblue: #adabdd;
+// $lightred: #a78282;
+$lightred: #ffafbf;
+$textcolor: #4a506a;
+$darkbackground: #282828;
+
+@mixin smalltitle($spacing) {
+  max-width: 252px;
+  text-align: center;
+  margin: 0 auto;
+  color: $darkbackground;
+  position: relative;
+  font-size: 3.5vh;
+  letter-spacing: $spacing;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 4vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5vh;
+    width: 25px;
+    transform: translateX(-100%);
+    background-color: $barcolor;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0.5vh;
+    width: 25px;
+    transform: translateX(100%);
+    background-color: $barcolor;
+  }
+}
+
+@mixin smalltitle2($spacing) {
+  max-width: 450px;
+  text-align: center;
+  margin: 0 auto;
+  color: $darkbackground;
+  position: relative;
+  font-size: 5vh;
+  letter-spacing: $spacing;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 4vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5vh;
+    width: 25px;
+    transform: translateX(-100%);
+    background-color: $barcolor;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0.5vh;
+    width: 25px;
+    transform: translateX(100%);
+    background-color: $barcolor;
+  }
+}
+
+@mixin mediumtitle($spacing) {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  color: $darkbackground;
+  position: relative;
+  font-size: 7vh;
+  letter-spacing: $spacing;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 4vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5vh;
+    width: 50px;
+    transform: translateX(-100%);
+    background-color: $barcolor;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0.5vh;
+    width: 50px;
+    transform: translateX(100%);
+    background-color: $barcolor;
+  }
+}
+
+@mixin largetitle($spacing) {
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto;
+  color: $darkbackground;
+  position: relative;
+  font-size: 10vh;
+  letter-spacing: $spacing;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 4vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1vh;
+    width: 50px;
+    transform: translateX(-100%);
+    background-color: $barcolor;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1vh;
+    width: 50px;
+    transform: translateX(100%);
+    background-color: $barcolor;
+  }
+}
+
+@mixin hoverbutton($width, $paddiing) {
+  width: $width;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  padding: $paddiing;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s ease-in-out;
+  font-size: 1.75vh;
+}
+
+@mixin smallButton($background, $margin, $padding, $glare) {
+  width: 140px;
+  max-width: 140px;
+  font-size: 2vh;
+  background: $background;
+  margin: $margin;
+  padding: $padding;
+
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.25vh;
+  overflow: hidden;
+
+  &:after {
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba($color: $glare, $alpha: 0.1),
+      transparent
+    );
+  }
+  &:hover::after {
+    left: 100%;
+    transition: 1s;
+  }
+}
+
+@mixin mediumButton($background, $margin, $padding, $glare) {
+  width: 180px;
+  max-width: 180px;
+  font-size: 2.5vh;
+  background-color: $background;
+  margin: $margin;
+  padding: $padding;
+
+  position: relative;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.25vh;
+  overflow: hidden;
+  &:after {
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba($color: $glare, $alpha: 0.1),
+      transparent
+    );
+  }
+  &:hover::after {
+    left: 100%;
+    transition: 1s;
+  }
+}
+
+@mixin largeButton($background, $margin, $padding, $glare) {
+  width: 250px;
+  max-width: 250px;
+  font-size: 4vh;
+  background-color: $background;
+  margin: $margin;
+  padding: $padding;
+
+  position: relative;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.25vh;
+  overflow: hidden;
+  &:after {
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba($color: $glare, $alpha: 0.1),
+      transparent
+    );
+  }
+  &:hover::after {
+    left: 100%;
+    transition: 1s;
+  }
+}

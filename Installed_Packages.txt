@@ -1,0 +1,35 @@
+for TodoApp:
+npm install react-icons --save
+
+
+for Porftolio:
+npm i react-video-js-player
+npm install react-scroll
+
+
+for CryptoApp:
+npm install axios
+
+Anaconda3\envs>
+conda activate opencv-enc 
+...> python "working od/fr"
+
+
+for GoogleMapsApp:
+npm install @material-ui/core @material-ui/icons @material-ui/lab @react-google-maps/api axios google-map-react
+**************************also dont forget script inside index.html**********************
+
+***************************************************************
+THEN OPEN GIT BASH
+git lfs install
+git track "*.mp4"
+same for *.jpg and *.png
+git add .gitattributes
+***************************************************************
+npm run build
+npm add .
+***************************************************************
+then push to remote !
+***************************************************************
+to ignore WARNINGS! for Netlify: set CI=false npm run build
+reference:https://dev.to/kapi1/solved-treating-warnings-as-errors-because-of-process-env-ci-true-bk5

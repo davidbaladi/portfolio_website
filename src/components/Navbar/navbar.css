@@ -1,0 +1,377 @@
+@media only screen and (max-width: 499px) {
+  .navbar-container {
+    height: 10vh;
+    width: 100%;
+    max-width: 499px;
+    position: fixed;
+    z-index: 200;
+  }
+  .navbar-container .navbar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 0.5vh rgba(49, 34, 191, 0.9);
+            box-shadow: 0 0.5vh rgba(49, 34, 191, 0.9);
+    top: 0;
+    left: 0;
+    padding: 0 5vw;
+    background-color: black;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar-container .navbar .logo {
+    cursor: pointer;
+    font-size: 2vh;
+  }
+  .navbar-container .navbar .logo .fa-dna {
+    margin-left: 1vh;
+    font-size: 1.5vh;
+    -webkit-transform: translateY(-0.1vh);
+            transform: translateY(-0.1vh);
+  }
+  .navbar-container .navbar .sidebar-button {
+    cursor: pointer;
+    font-size: 1.75vh;
+  }
+  .navbar-container .navbar.sticky {
+    opacity: 0.4;
+    height: 7vh;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .navbar-container .navbar.sticky:hover {
+    opacity: 1;
+  }
+  .navbar-container .sidebar {
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    -webkit-transform: translateY(calc(100% + 0.5vh));
+            transform: translateY(calc(100% + 0.5vh));
+    right: -50vw;
+    width: 50vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 1vh 13vh 3vh;
+  }
+  .navbar-container .sidebar.active {
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    right: 0;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .home-li {
+    margin-bottom: 5vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .about-me-li {
+    margin-bottom: 5vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection li {
+    list-style: none;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection li:hover {
+    -webkit-box-shadow: 0 0.3vh #3122bf;
+            box-shadow: 0 0.3vh #3122bf;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection li .link {
+    cursor: pointer;
+    font-size: 2.5vh;
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .projects-li {
+    margin-bottom: 2.4vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .projects-list {
+    margin: 0 0 0 2vw;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .projects-list li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 2vh;
+    margin-bottom: 2.2vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .contact-li {
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .navbar-container {
+    height: 10vh;
+    width: 100%;
+    max-width: 999px;
+    position: fixed;
+    z-index: 200;
+  }
+  .navbar-container .navbar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 0.5vh rgba(49, 34, 191, 0.9);
+            box-shadow: 0 0.5vh rgba(49, 34, 191, 0.9);
+    top: 0;
+    left: 0;
+    padding: 0 5vw;
+    background-color: black;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar-container .navbar .logo {
+    cursor: pointer;
+    font-size: 3.5vh;
+  }
+  .navbar-container .navbar .logo .fa-dna {
+    margin-left: 1vh;
+    font-size: 2.75vh;
+    -webkit-transform: translateY(-0.1vh);
+            transform: translateY(-0.1vh);
+  }
+  .navbar-container .navbar .sidebar-button {
+    cursor: pointer;
+    font-size: 3vh;
+  }
+  .navbar-container .navbar.sticky {
+    opacity: 0.4;
+    height: 7vh;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .navbar-container .navbar.sticky:hover {
+    opacity: 1;
+  }
+  .navbar-container .sidebar {
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    -webkit-transform: translateY(calc(100% + 0.5vh));
+            transform: translateY(calc(100% + 0.5vh));
+    right: -260px;
+    width: 260px;
+    font-family: sans-serif;
+    font-weight: bold;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 4vh 13vh 4vh;
+  }
+  .navbar-container .sidebar.active {
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    right: 0;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .home-li {
+    margin-bottom: 5vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .about-me-li {
+    margin-bottom: 5vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection li {
+    list-style: none;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection li:hover {
+    -webkit-box-shadow: 0 0.3vh #3122bf;
+            box-shadow: 0 0.3vh #3122bf;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection li .link {
+    cursor: pointer;
+    font-size: 2.5vh;
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .projects-li {
+    margin-bottom: 2.4vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .projects-list {
+    margin: 0 0 0 2vw;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .projects-list li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 2vh;
+    margin-bottom: 2.2vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .contact-li {
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .navbar-container {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+  }
+  .navbar-container .navbar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 0.5vh rgba(49, 34, 191, 0.9);
+            box-shadow: 0 0.5vh rgba(49, 34, 191, 0.9);
+    top: 0;
+    left: 0;
+    padding: 0 5vw;
+    background-color: black;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar-container .navbar .logo {
+    cursor: pointer;
+    font-size: 3.5vh;
+  }
+  .navbar-container .navbar .logo .fa-dna {
+    margin-left: 1vh;
+    font-size: 2.75vh;
+    -webkit-transform: translateY(-0.1vh);
+            transform: translateY(-0.1vh);
+  }
+  .navbar-container .navbar .sidebar-button {
+    cursor: pointer;
+    font-size: 3vh;
+  }
+  .navbar-container .navbar.sticky {
+    opacity: 0.4;
+    height: 7vh;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .navbar-container .navbar.sticky:hover {
+    opacity: 1;
+  }
+  .navbar-container .sidebar {
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    -webkit-transform: translateY(calc(100% + 0.5vh));
+            transform: translateY(calc(100% + 0.5vh));
+    right: -280px;
+    width: 280px;
+    font-family: sans-serif;
+    font-weight: bold;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 5vh 13vh 5vh;
+  }
+  .navbar-container .sidebar.active {
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    right: 0;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .home-li {
+    margin-bottom: 5vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .about-me-li {
+    margin-bottom: 5vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection li {
+    list-style: none;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection li:hover {
+    -webkit-box-shadow: 0 0.3vh #3122bf;
+            box-shadow: 0 0.3vh #3122bf;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection li .link {
+    cursor: pointer;
+    font-size: 3vh;
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .projects-li {
+    margin-bottom: 2.4vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .projects-list {
+    margin: 0 0 0 2vw;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .projects-list li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 2.25vh;
+    margin-bottom: 2.2vh;
+  }
+  .navbar-container .sidebar .sidebar-inner .main-selection .contact-li {
+    margin-top: 5vh;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

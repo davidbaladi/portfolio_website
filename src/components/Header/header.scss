@@ -1,0 +1,294 @@
+@import "../variables";
+
+@media only screen and (max-width: 499px) {
+  .header-container {
+    position: relative;
+    height: 105vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    background: url("./image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 2vh;
+      width: 55%;
+      background-color: $lightorange;
+    }
+
+    .header {
+      margin-top: 15vh;
+      height: 60vh;
+      width: 252px;
+      max-width: 90%;
+      background-color: rgba(0, 0, 0, 0.3);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #fff;
+
+      .my-name {
+        font-size: 4vh;
+        margin-bottom: 2vh;
+        letter-spacing: 0.25vh;
+      }
+
+      .my-occupation {
+        font-size: 2.75vh;
+        margin-bottom: 2vh;
+      }
+
+      .header-buttons {
+        margin-top: 2vh;
+        width: 100%;
+        max-width: 280px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .header-button {
+          @include smallButton(transparent, unset, 3vh 0, #fff);
+          border: 0.1vh solid #fff;
+
+          &.resume {
+            margin-top: 4vh;
+            i {
+              font-size: 2vh;
+              margin-left: 1vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and(max-width:999px) {
+  .header-container {
+    position: relative;
+    height: 105vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    background: url("./image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 2vh;
+      width: 55%;
+      background-color: $lightorange;
+    }
+
+    .header {
+      margin-top: 15vh;
+      height: 60vh;
+      width: 630px;
+      max-width: 90%;
+      background-color: rgba(0, 0, 0, 0.3);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #fff;
+
+      .my-name {
+        font-size: 9vh;
+        margin-bottom: 2vh;
+        letter-spacing: 0.25vh;
+      }
+
+      .my-occupation {
+        font-size: 5vh;
+      }
+
+      .header-buttons {
+        width: 100%;
+        margin-top: 4vh;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .header-button {
+          @include mediumButton(transparent, unset, 3vh 0, #fff);
+          border: 0.1vh solid #fff;
+          &.resume {
+            margin-top: 4vh;
+            i {
+              font-size: 2.4vh;
+              margin-left: 1vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+  .header-container {
+    position: relative;
+    height: 105vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    background: url("./image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 2vh;
+      width: 55%;
+      background-color: $lightorange;
+    }
+
+    .header {
+      margin-top: 15vh;
+      height: 60vh;
+      width: 750px;
+      background-color: rgba(0, 0, 0, 0.3);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #fff;
+
+      .my-name {
+        font-size: 13vh;
+        margin-bottom: 2vh;
+        letter-spacing: 0.25vh;
+      }
+
+      .my-occupation {
+        font-size: 7.5vh;
+      }
+
+      .header-buttons {
+        margin-top: 4vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4vw;
+        justify-content: space-between;
+
+        .header-button {
+          @include mediumButton(transparent, unset, 3vh 0, #fff);
+          border: 0.1vh solid #fff;
+          &.resume {
+            i {
+              font-size: 2.4vh;
+              margin-left: 1vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .header-container {
+    position: relative;
+    height: 106vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    background: url("./image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 6vh;
+      width: 55%;
+      background-color: $lightorange;
+    }
+
+    .header {
+      margin-top: 15vh;
+      height: 75vh;
+      width: 1150px;
+      background-color: rgba(0, 0, 0, 0.3);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #fff;
+
+      .my-name {
+        font-size: 18vh;
+        letter-spacing: 0.5vh;
+      }
+
+      .my-occupation {
+        font-size: 10vh;
+        letter-spacing: 0.5vh;
+      }
+
+      .header-buttons {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4vw;
+        margin-top: 4vh;
+
+        .header-button {
+          border: 0.1vh solid #fff;
+          @include largeButton(transparent, unset, 3vh 0, #fff);
+          font-size: 4vh;
+          &.projects {
+            justify-self: right;
+          }
+          &.resume {
+            margin-top: unset;
+            i {
+              transform: translateY(-0.2vh);
+              font-size: 3.9vh;
+              margin-left: 1vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}

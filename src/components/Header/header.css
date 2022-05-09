@@ -1,0 +1,456 @@
+@media only screen and (max-width: 499px) {
+  .header-container {
+    position: relative;
+    height: 105vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: url("./image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2vh;
+    width: 55%;
+    background-color: #fde7c5;
+  }
+  .header-container .header {
+    margin-top: 15vh;
+    height: 60vh;
+    width: 252px;
+    max-width: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+  }
+  .header-container .header .my-name {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    letter-spacing: 0.25vh;
+  }
+  .header-container .header .my-occupation {
+    font-size: 2.75vh;
+    margin-bottom: 2vh;
+  }
+  .header-container .header .header-buttons {
+    margin-top: 2vh;
+    width: 100%;
+    max-width: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-container .header .header-buttons .header-button {
+    width: 140px;
+    max-width: 140px;
+    font-size: 2vh;
+    background: transparent;
+    margin: unset;
+    padding: 3vh 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Mulish", sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.25vh;
+    overflow: hidden;
+    border: 0.1vh solid #fff;
+  }
+  .header-container .header .header-buttons .header-button:after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, 0.1)), to(transparent));
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  }
+  .header-container .header .header-buttons .header-button:hover::after {
+    left: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .header-container .header .header-buttons .header-button.resume {
+    margin-top: 4vh;
+  }
+  .header-container .header .header-buttons .header-button.resume i {
+    font-size: 2vh;
+    margin-left: 1vh;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .header-container {
+    position: relative;
+    height: 105vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: url("./image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2vh;
+    width: 55%;
+    background-color: #fde7c5;
+  }
+  .header-container .header {
+    margin-top: 15vh;
+    height: 60vh;
+    width: 630px;
+    max-width: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+  }
+  .header-container .header .my-name {
+    font-size: 9vh;
+    margin-bottom: 2vh;
+    letter-spacing: 0.25vh;
+  }
+  .header-container .header .my-occupation {
+    font-size: 5vh;
+  }
+  .header-container .header .header-buttons {
+    width: 100%;
+    margin-top: 4vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-container .header .header-buttons .header-button {
+    width: 180px;
+    max-width: 180px;
+    font-size: 2.5vh;
+    background-color: transparent;
+    margin: unset;
+    padding: 3vh 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.25vh;
+    overflow: hidden;
+    border: 0.1vh solid #fff;
+  }
+  .header-container .header .header-buttons .header-button:after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, 0.1)), to(transparent));
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  }
+  .header-container .header .header-buttons .header-button:hover::after {
+    left: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .header-container .header .header-buttons .header-button.resume {
+    margin-top: 4vh;
+  }
+  .header-container .header .header-buttons .header-button.resume i {
+    font-size: 2.4vh;
+    margin-left: 1vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+  .header-container {
+    position: relative;
+    height: 105vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: url("./image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2vh;
+    width: 55%;
+    background-color: #fde7c5;
+  }
+  .header-container .header {
+    margin-top: 15vh;
+    height: 60vh;
+    width: 750px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+  }
+  .header-container .header .my-name {
+    font-size: 13vh;
+    margin-bottom: 2vh;
+    letter-spacing: 0.25vh;
+  }
+  .header-container .header .my-occupation {
+    font-size: 7.5vh;
+  }
+  .header-container .header .header-buttons {
+    margin-top: 4vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-container .header .header-buttons .header-button {
+    width: 180px;
+    max-width: 180px;
+    font-size: 2.5vh;
+    background-color: transparent;
+    margin: unset;
+    padding: 3vh 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.25vh;
+    overflow: hidden;
+    border: 0.1vh solid #fff;
+  }
+  .header-container .header .header-buttons .header-button:after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, 0.1)), to(transparent));
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  }
+  .header-container .header .header-buttons .header-button:hover::after {
+    left: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .header-container .header .header-buttons .header-button.resume i {
+    font-size: 2.4vh;
+    margin-left: 1vh;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .header-container {
+    position: relative;
+    height: 106vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: url("./image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 6vh;
+    width: 55%;
+    background-color: #fde7c5;
+  }
+  .header-container .header {
+    margin-top: 15vh;
+    height: 75vh;
+    width: 1150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+  }
+  .header-container .header .my-name {
+    font-size: 18vh;
+    letter-spacing: 0.5vh;
+  }
+  .header-container .header .my-occupation {
+    font-size: 10vh;
+    letter-spacing: 0.5vh;
+  }
+  .header-container .header .header-buttons {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4vw;
+    margin-top: 4vh;
+  }
+  .header-container .header .header-buttons .header-button {
+    border: 0.1vh solid #fff;
+    width: 250px;
+    max-width: 250px;
+    font-size: 4vh;
+    background-color: transparent;
+    margin: unset;
+    padding: 3vh 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.25vh;
+    overflow: hidden;
+    font-size: 4vh;
+  }
+  .header-container .header .header-buttons .header-button:after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, 0.1)), to(transparent));
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  }
+  .header-container .header .header-buttons .header-button:hover::after {
+    left: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .header-container .header .header-buttons .header-button.projects {
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
+  .header-container .header .header-buttons .header-button.resume {
+    margin-top: unset;
+  }
+  .header-container .header .header-buttons .header-button.resume i {
+    -webkit-transform: translateY(-0.2vh);
+            transform: translateY(-0.2vh);
+    font-size: 3.9vh;
+    margin-left: 1vh;
+  }
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,919 @@
+@media only screen and (max-width: 499px) {
+  .project-four-container {
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    padding-bottom: 7vh;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four {
+    position: relative;
+    padding-top: 9vh;
+    padding-bottom: 10vh;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 2vh;
+  }
+  .project-four-container .project-four .project-four-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-row: 1;
+    grid-area: 1;
+  }
+  .project-four-container .project-four .project-four-text .project-title {
+    max-width: 252px;
+    text-align: center;
+    margin: 0 auto;
+    color: #282828;
+    position: relative;
+    font-size: 3.5vh;
+    letter-spacing: 0.25vh;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 4vh;
+  }
+  .project-four-container .project-four .project-four-text .project-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5vh;
+    width: 25px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0.5vh;
+    width: 25px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-four-info {
+    font-family: "Mulish", sans-serif;
+    font-size: 2vh;
+    letter-spacing: 0.2vh;
+    width: 100%;
+    max-width: 252px;
+    margin: 0 auto;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button {
+    text-decoration: none;
+    position: relative;
+    width: 140px;
+    max-width: 140px;
+    font-size: 2vh;
+    background: #3122bf;
+    margin: 10vh auto;
+    padding: 3vh 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Mulish", sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.25vh;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(241, 242, 191, 0.1)), to(transparent));
+    background: linear-gradient(90deg, transparent, rgba(241, 242, 191, 0.1), transparent);
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:hover::after {
+    left: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .project-four-container .project-four .project-four-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 252px;
+    margin: 0 auto;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-one {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 20%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-two {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    height: 40%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-three {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10%;
+    width: 20%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img {
+    z-index: 1;
+    height: 100%;
+    background: url("./bitcoin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover {
+    -webkit-transform: scale(120%);
+            transform: scale(120%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    cursor: pointer;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover:after {
+    content: "DEMO";
+    width: 116px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    padding: 2.5vh 0;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    font-size: 1.75vh;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  .project-four-container {
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    padding: 7vh 0;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four {
+    position: relative;
+    padding-top: 12vh;
+    padding-bottom: 20vh;
+    height: 100%;
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 2vh;
+  }
+  .project-four-container .project-four .project-four-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-row: 1;
+    grid-area: 1;
+  }
+  .project-four-container .project-four .project-four-text .project-title {
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto;
+    color: #282828;
+    position: relative;
+    font-size: 5vh;
+    letter-spacing: 0.25vh;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 4vh;
+  }
+  .project-four-container .project-four .project-four-text .project-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5vh;
+    width: 25px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0.5vh;
+    width: 25px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-four-info {
+    font-family: "Mulish", sans-serif;
+    font-size: 2vh;
+    letter-spacing: 0.2vh;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button {
+    text-decoration: none;
+    position: relative;
+    width: 140px;
+    max-width: 140px;
+    font-size: 2vh;
+    background: #3122bf;
+    margin: 10vh auto;
+    padding: 3vh 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Mulish", sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.25vh;
+    overflow: hidden;
+    font-size: 2.5vh;
+    margin-bottom: 0;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(241, 242, 191, 0.1)), to(transparent));
+    background: linear-gradient(90deg, transparent, rgba(241, 242, 191, 0.1), transparent);
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:hover::after {
+    left: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .project-four-container .project-four .project-four-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-one {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 20%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-two {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    height: 40%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-three {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10%;
+    width: 20%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img {
+    z-index: 1;
+    height: 100%;
+    background: url("./bitcoin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover {
+    -webkit-transform: scale(120%);
+            transform: scale(120%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    cursor: pointer;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover:after {
+    content: "DEMO";
+    width: 116px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    padding: 2.5vh 0;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    font-size: 1.75vh;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+  .project-four-container {
+    height: 115vh;
+    width: 100%;
+    position: relative;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four {
+    position: relative;
+    padding: 9vh 0 17vh 0;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+    grid-gap: 2vh;
+  }
+  .project-four-container .project-four .project-four-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-row: 1;
+    grid-area: 1;
+  }
+  .project-four-container .project-four .project-four-text .project-title {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    color: #282828;
+    position: relative;
+    font-size: 7vh;
+    letter-spacing: 0.25vh;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 4vh;
+  }
+  .project-four-container .project-four .project-four-text .project-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5vh;
+    width: 50px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0.5vh;
+    width: 50px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-four-info {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: "Mulish", sans-serif;
+    font-size: 2vh;
+    letter-spacing: 0.2vh;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button {
+    position: relative;
+    text-decoration: none;
+    width: 180px;
+    max-width: 180px;
+    font-size: 2.5vh;
+    background-color: #3122bf;
+    margin: 10vh auto;
+    padding: 3vh 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.25vh;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(241, 242, 191, 0.1)), to(transparent));
+    background: linear-gradient(90deg, transparent, rgba(241, 242, 191, 0.1), transparent);
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:hover::after {
+    left: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .project-four-container .project-four .project-four-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 530px;
+    margin: 0 auto;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-one {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 20%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-two {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    height: 40%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-three {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10%;
+    width: 20%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img {
+    z-index: 1;
+    height: 100%;
+    background: url("./bitcoin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover {
+    -webkit-transform: scale(120%);
+            transform: scale(120%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    cursor: pointer;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover:after {
+    content: "DEMO";
+    width: 146px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    padding: 2.5vh 0;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    font-size: 1.75vh;
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+  .project-four-container {
+    background-color: #ffafbf;
+    height: 120vh;
+    width: 100%;
+    padding: 5vh 0;
+    position: relative;
+  }
+  .project-four-container .project-four {
+    position: relative;
+    padding-top: 14vh;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8vh;
+  }
+  .project-four-container .project-four .project-four-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-four-container .project-four .project-four-text .project-title {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    color: #282828;
+    position: relative;
+    font-size: 7vh;
+    letter-spacing: 0.25vh;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 4vh;
+  }
+  .project-four-container .project-four .project-four-text .project-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5vh;
+    width: 50px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0.5vh;
+    width: 50px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-four-info {
+    font-family: "Mulish", sans-serif;
+    font-size: 3vh;
+    letter-spacing: 0.2vh;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button {
+    text-decoration: none;
+    position: relative;
+    width: 180px;
+    max-width: 180px;
+    font-size: 2.5vh;
+    background-color: #3122bf;
+    margin: 10vh auto;
+    padding: 3vh 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.25vh;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(241, 242, 191, 0.1)), to(transparent));
+    background: linear-gradient(90deg, transparent, rgba(241, 242, 191, 0.1), transparent);
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:hover::after {
+    left: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .project-four-container .project-four .project-four-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 75%;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-one {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 20%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-two {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    height: 40%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-three {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10%;
+    width: 20%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-four {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: url("./bitcoin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover {
+    -webkit-transform: scale(120%);
+            transform: scale(120%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    cursor: pointer;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover:after {
+    content: "DEMO";
+    color: #fff;
+    width: 146px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    padding: 2.5vh 0;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    font-size: 1.75vh;
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .project-four-container {
+    background-color: #ffafbf;
+    height: 120vh;
+    width: 100%;
+    padding: 5vh 0;
+    position: relative;
+  }
+  .project-four-container .project-four {
+    position: relative;
+    padding-top: 14vh;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8vh;
+  }
+  .project-four-container .project-four .project-four-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-four-container .project-four .project-four-text .project-title {
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+    color: #282828;
+    position: relative;
+    font-size: 10vh;
+    letter-spacing: 0.25vh;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 4vh;
+  }
+  .project-four-container .project-four .project-four-text .project-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1vh;
+    width: 50px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1vh;
+    width: 50px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    background-color: #3122bf;
+  }
+  .project-four-container .project-four .project-four-text .project-four-info {
+    font-family: "Mulish", sans-serif;
+    font-size: 3vh;
+    letter-spacing: 0.2vh;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button {
+    position: relative;
+    text-decoration: none;
+    width: 250px;
+    max-width: 250px;
+    font-size: 4vh;
+    background-color: #3122bf;
+    margin: 10vh auto;
+    padding: 3vh 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.25vh;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(241, 242, 191, 0.1)), to(transparent));
+    background: linear-gradient(90deg, transparent, rgba(241, 242, 191, 0.1), transparent);
+  }
+  .project-four-container .project-four .project-four-text .project-four-demo-button:hover::after {
+    left: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .project-four-container .project-four .project-four-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 75%;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-one {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 20%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-two {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    height: 40%;
+    width: 6%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-three {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10%;
+    width: 20%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img-span-four {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    background-color: #ffafbf;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: url("./bitcoin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover {
+    -webkit-transform: scale(120%);
+            transform: scale(120%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    cursor: pointer;
+  }
+  .project-four-container .project-four .project-four-img-container .project-four-img:hover:after {
+    content: "DEMO";
+    color: #fff;
+    width: 210px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    padding: 2.5vh 0;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    font-size: 1.75vh;
+    font-size: 3.25vh;
+  }
+}
+/*# sourceMappingURL=project-four.css.map */

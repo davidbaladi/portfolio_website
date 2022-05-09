@@ -1,0 +1,363 @@
+@import "../variables";
+
+@media only screen and (max-width: 499px) {
+  .navbar-container {
+    height: 10vh;
+    width: 100%;
+    max-width: 499px;
+    position: fixed;
+    z-index: 200;
+
+    .navbar {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      font-family: sans-serif;
+      font-weight: bold;
+      transition: 0.5s ease-in-out;
+      box-shadow: 0 0.5vh rgba($barcolor, 0.9);
+      top: 0;
+      left: 0;
+      padding: 0 5vw;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        cursor: pointer;
+        font-size: 2vh;
+        .fa-dna {
+          margin-left: 1vh;
+          font-size: 1.5vh;
+          transform: translateY(-0.1vh);
+        }
+      }
+
+      .sidebar-button {
+        cursor: pointer;
+        font-size: 1.75vh;
+      }
+    }
+
+    .navbar.sticky {
+      opacity: 0.4;
+      height: 7vh;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .sidebar {
+      position: absolute;
+      bottom: 0;
+      height: 100vh;
+      transform: translateY(calc(100% + 0.5vh));
+      right: -50vw;
+      width: 50vw;
+      &.active {
+        transition: 0.3s ease-in;
+        right: 0;
+      }
+
+      font-family: sans-serif;
+      font-weight: bold;
+      transition: 0.3s ease-in;
+
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1vh 13vh 3vh;
+
+      .sidebar-inner {
+        .main-selection {
+          .home-li {
+            margin-bottom: 5vh;
+          }
+          .about-me-li {
+            margin-bottom: 5vh;
+          }
+          li {
+            list-style: none;
+            transition: 0.3s ease-in;
+
+            &:hover {
+              box-shadow: 0 0.3vh $barcolor;
+              transition: 0.3s ease-in;
+            }
+
+            .link {
+              cursor: pointer;
+              font-size: 2.5vh;
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+
+          .projects-li {
+            margin-bottom: 2.4vh;
+          }
+
+          .projects-list {
+            margin: 0 0 0 2vw;
+
+            li {
+              list-style: none;
+              cursor: pointer;
+              font-size: 2vh;
+              margin-bottom: 2.2vh;
+            }
+          }
+
+          .contact-li {
+            margin-top: 5vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .navbar-container {
+    height: 10vh;
+    width: 100%;
+    max-width: 999px;
+    position: fixed;
+    z-index: 200;
+
+    .navbar {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      font-family: sans-serif;
+      font-weight: bold;
+      transition: 0.5s ease-in-out;
+      box-shadow: 0 0.5vh rgba($barcolor, 0.9);
+      top: 0;
+      left: 0;
+      padding: 0 5vw;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        cursor: pointer;
+        font-size: 3.5vh;
+        .fa-dna {
+          margin-left: 1vh;
+          font-size: 2.75vh;
+          transform: translateY(-0.1vh);
+        }
+      }
+
+      .sidebar-button {
+        cursor: pointer;
+        font-size: 3vh;
+      }
+    }
+
+    .navbar.sticky {
+      opacity: 0.4;
+      height: 7vh;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .sidebar {
+      position: absolute;
+      bottom: 0;
+      height: 100vh;
+      transform: translateY(calc(100% + 0.5vh));
+      right: -260px;
+      width: 260px;
+      &.active {
+        transition: 0.3s ease-in;
+        right: 0;
+      }
+
+      font-family: sans-serif;
+      font-weight: bold;
+      transition: 0.3s ease-in;
+
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 4vh 13vh 4vh;
+
+      .sidebar-inner {
+        .main-selection {
+          .home-li {
+            margin-bottom: 5vh;
+          }
+          .about-me-li {
+            margin-bottom: 5vh;
+          }
+          li {
+            list-style: none;
+            transition: 0.3s ease-in;
+
+            &:hover {
+              box-shadow: 0 0.3vh $barcolor;
+              transition: 0.3s ease-in;
+            }
+
+            .link {
+              cursor: pointer;
+              font-size: 2.5vh;
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+
+          .projects-li {
+            margin-bottom: 2.4vh;
+          }
+
+          .projects-list {
+            margin: 0 0 0 2vw;
+
+            li {
+              list-style: none;
+              cursor: pointer;
+              font-size: 2vh;
+              margin-bottom: 2.2vh;
+            }
+          }
+
+          .contact-li {
+            margin-top: 5vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .navbar-container {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+
+    .navbar {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      font-family: sans-serif;
+      font-weight: bold;
+      transition: 0.5s ease-in-out;
+      box-shadow: 0 0.5vh rgba(#3122bf, 0.9);
+      top: 0;
+      left: 0;
+      padding: 0 5vw;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        cursor: pointer;
+        font-size: 3.5vh;
+        .fa-dna {
+          margin-left: 1vh;
+          font-size: 2.75vh;
+          transform: translateY(-0.1vh);
+        }
+      }
+
+      .sidebar-button {
+        cursor: pointer;
+        font-size: 3vh;
+      }
+    }
+
+    .navbar.sticky {
+      opacity: 0.4;
+      height: 7vh;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .sidebar {
+      position: absolute;
+      bottom: 0;
+      height: 100vh;
+      transform: translateY(calc(100% + 0.5vh));
+      right: -280px;
+      width: 280px;
+      &.active {
+        transition: 0.3s ease-in;
+        right: 0;
+      }
+
+      font-family: sans-serif;
+      font-weight: bold;
+      transition: 0.3s ease-in;
+
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5vh 13vh 5vh;
+
+      .sidebar-inner {
+        .main-selection {
+          .home-li {
+            margin-bottom: 5vh;
+          }
+          .about-me-li {
+            margin-bottom: 5vh;
+          }
+          li {
+            list-style: none;
+            transition: 0.3s ease-in;
+
+            &:hover {
+              box-shadow: 0 0.3vh #3122bf;
+              transition: 0.3s ease-in;
+            }
+
+            .link {
+              cursor: pointer;
+              font-size: 3vh;
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+
+          .projects-li {
+            margin-bottom: 2.4vh;
+          }
+
+          .projects-list {
+            margin: 0 0 0 2vw;
+
+            li {
+              list-style: none;
+              cursor: pointer;
+              font-size: 2.25vh;
+              margin-bottom: 2.2vh;
+            }
+          }
+
+          .contact-li {
+            margin-top: 5vh;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,431 @@
+@import "../variables";
+
+@media only screen and (max-width: 499px) {
+  .intro-spacer {
+    height: 2.5vh;
+  }
+  .intro-container {
+    height: 110vh;
+    width: 100%;
+    background-color: $lightorange;
+
+    .intro {
+      padding: 12vh 0 13vh 0;
+      height: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 4vh;
+      grid-template-rows: 1fr 1.5fr;
+
+      .intro-img {
+        height: 100%;
+        width: 100%;
+        max-width: 252px;
+        margin: 0 auto;
+
+        background: url("./image2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .intro-img-span-one {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 20%;
+          width: 12%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-two {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 40%;
+          width: 5%;
+          background-color: $lightorange;
+          transform: translateY(-20%);
+        }
+
+        .intro-img-span-three {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 20%;
+          width: 5%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-four {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 8%;
+          width: 16%;
+          background-color: $lightorange;
+        }
+      }
+
+      .intro-text {
+        grid-area: 1;
+        position: relative;
+        width: 100%;
+        max-width: 252px;
+        margin: 0 auto;
+
+        .intro-text-p {
+          font-family: "Mulish", sans-serif;
+          line-height: 1.4;
+          color: $textcolor;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          font-size: 2.5vh;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  .intro-spacer {
+    height: 3vh;
+  }
+
+  .intro-container {
+    height: 115vh;
+    width: 100%;
+    background-color: $lightorange;
+
+    .intro {
+      padding: 0 0 18vh 0;
+      height: 100%;
+
+      display: grid;
+      grid-gap: 4vh;
+      grid-template-rows: 1fr 1.75fr;
+
+      .intro-img {
+        height: 100%;
+        width: 400px;
+        margin: 0 auto;
+
+        background: url("./image2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .intro-img-span-one {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 20%;
+          width: 12%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-two {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 40%;
+          width: 5%;
+          background-color: $lightorange;
+          transform: translateY(-20%);
+        }
+
+        .intro-img-span-three {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 20%;
+          width: 5%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-four {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 8%;
+          width: 16%;
+          background-color: $lightorange;
+        }
+      }
+
+      .intro-text {
+        width: 400px;
+        margin: 0 auto;
+        grid-area: 1;
+        position: relative;
+
+        .intro-text-p {
+          font-family: "Mulish", sans-serif;
+          line-height: 1.4;
+          color: $textcolor;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          font-size: 2.5vh;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+  .intro-spacer {
+    height: 3vh;
+  }
+
+  .intro-container {
+    height: 115vh;
+    width: 100%;
+    background-color: $lightorange;
+    padding: 0 0 17vh 0;
+
+    .intro {
+      height: 100%;
+      display: grid;
+      grid-gap: 4vh;
+      grid-template-rows: 1fr 1.75fr;
+
+      .intro-img {
+        width: 400px;
+        margin: 0 auto;
+        background: url("./image2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .intro-img-span-one {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 20%;
+          width: 12%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-two {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 40%;
+          width: 5%;
+          background-color: $lightorange;
+          transform: translateY(-20%);
+        }
+
+        .intro-img-span-three {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 20%;
+          width: 5%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-four {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 8%;
+          width: 16%;
+          background-color: $lightorange;
+        }
+      }
+
+      .intro-text {
+        grid-area: 1;
+        width: 530px;
+        margin: 0 auto;
+        position: relative;
+
+        .intro-text-p {
+          font-family: "Mulish", sans-serif;
+          line-height: 1.4;
+          color: $textcolor;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          font-size: 3vh;
+          font-size: 2.5vh;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+  .intro-spacer {
+    height: 4vh;
+  }
+  .intro-container {
+    background-color: $lightorange;
+    height: 110vh;
+    width: 100%;
+    .intro {
+      padding: 12vh 0 5vh 0;
+      height: 90%;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 6vw;
+      grid-template-columns: repeat(2, 1fr);
+
+      .intro-img {
+        background: url("./image2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .intro-img-span-one {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 20%;
+          width: 12%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-two {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 40%;
+          width: 5%;
+          background-color: $lightorange;
+          transform: translateY(-20%);
+        }
+
+        .intro-img-span-three {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 20%;
+          width: 5%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-four {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 8%;
+          width: 16%;
+          background-color: $lightorange;
+        }
+      }
+
+      .intro-text {
+        height: 90%;
+        font-family: "Mulish", sans-serif;
+        line-height: 1.6;
+        color: $textcolor;
+        position: relative;
+        font-size: 4.25vh;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 1vh;
+          width: 60%;
+          background-color: $barcolor;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .intro-spacer {
+    height: 4vh;
+  }
+  .intro-container {
+    background-color: $lightorange;
+    height: 110vh;
+    width: 100%;
+    .intro {
+      padding: 12vh 0 5vh 0;
+      height: 90%;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 6vw;
+      grid-template-columns: repeat(2, 1fr);
+
+      .intro-img {
+        background: url("./image2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .intro-img-span-one {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 20%;
+          width: 12%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-two {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 40%;
+          width: 5%;
+          background-color: $lightorange;
+          transform: translateY(-20%);
+        }
+
+        .intro-img-span-three {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 20%;
+          width: 5%;
+          background-color: $lightorange;
+        }
+
+        .intro-img-span-four {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 8%;
+          width: 16%;
+          background-color: $lightorange;
+        }
+      }
+
+      .intro-text {
+        height: 90%;
+        font-family: "Mulish", sans-serif;
+        line-height: 1.6;
+        color: $textcolor;
+        position: relative;
+        font-size: 4.25vh;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 1vh;
+          width: 60%;
+          background-color: $barcolor;
+        }
+      }
+    }
+  }
+}
