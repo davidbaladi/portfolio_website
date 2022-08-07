@@ -33,3 +33,15 @@ then push to remote !
 ***************************************************************
 to ignore WARNINGS! for Netlify: set CI=false npm run build
 reference:https://dev.to/kapi1/solved-treating-warnings-as-errors-because-of-process-env-ci-true-bk5
+
+
+**************************
+Pull Requests:
+https://opensource.com/article/19/7/create-pull-request-github
+
+
+
+*********
+Cloning and running with LFS:
+git lfs clone https://github.com/davidbaladi/portfolio_website.git
+npm install react-scripts
